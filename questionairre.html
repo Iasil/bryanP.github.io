@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Questionnaire</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body style="background-color: rgba(202, 197, 197, 0.856);">
+    <div class="container" style="background-color: white;">
+        <form>
+
+            <h3>General event info</h3>
+            <div class="form-group">
+                <label for="budget">What is your budget for this event?</label>
+                <input type="text" class="form-control" id="budget" placeholder="$" width="40%">
+            </div>
+
+            <div class="form-group">
+                <label for="numGuest">Expected number of guest?</label>
+                <input class="form-control" id="numGuest">
+            </div>
+
+            <div class="form-group nt">
+                <label for="Date">Desired date of event?</label>
+                <input type="datetime-local" id="Date">
+            </div>
+
+            <div class="form-group">
+                <label for="Location">Where do you want your event to be</label>
+                <input class="form-control" id="Location" placeholder="city, state, and/or address: ">
+            </div>
+
+
+            <h3>Any assistance planning the event?</h3>
+            <p>Do you need help finding a venue for the event?</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="venAns" id="vYes" value="No venue">
+                <label class="form-check-label" for="vYes">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="venAns" id="vNo" value="Has a venue">
+                <label class="form-check-label" for="vNo">No</label>
+            </div>
+            <p>Do you need help finding a baker for the cake?</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="bakerAns" id="bYes" value="No baker">
+                <label class="form-check-label" for="bYes">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="bakerAns" id="bNo" value="Has a baker">
+                <label class="form-check-label" for="bNo">No</label>
+            </div>
+            <p>Do you need help with catering for the event?</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="caterAns" id="cYes" value="No cater">
+                <label class="form-check-label" for="cYes">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="caterAns" id="cNo" value="Has a Cater">
+                <label class="form-check-label" for="cNo">No</label>
+            </div>
+            <p>Do you need help with photography for the event?</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="photoAns" id="pYes" value="No photographer Yet">
+                <label class="form-check-label" for="pYes">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="photoAns" id="pNo" value="Has a photographer">
+                <label class="form-check-label" for="pNo">No</label>
+            </div>
+            <p>Do you need help with the decor of the event?</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="decorAns" id="dYes" value="No decor in mind">
+                <label class="form-check-label" for="dYes">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="decorAns" id="dNo" value="Has a decorator">
+                <label class="form-check-label" for="dNo">No</label>
+            </div>
+            <p>Do you need a makeup artist for the event?</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="makeUpAns" id="mYes" value="No makeup artist Yet">
+                <label class="form-check-label" for="mYes">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="makeUpAns" id="mNo" value="Has a makeUp artist">
+                <label class="form-check-label" for="mNo">No</label>
+            </div>
+            <p>Do you need help finding live entertainment for the event?(i.e music/dj)</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="entertainmentAns" id="eYes"
+                    value="No entertainment Yet">
+                <label class="form-check-label" for="eYes">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="entertainmentAns" id="eNo" value="Has entertainment">
+                <label class="form-check-label" for="eNo">No</label>
+            </div>
+
+            <div class="form-group">
+                <label for="customerPlaces">Please enter the name of person, place, or company if you answered no to any
+                    of the above</label>
+                <textarea class="form-control" id="customerPlaces"
+                    placeholder="venue:&#13;&#10;catering service:&#13;&#10;ect:&#13;&#10;" rows="3"></textarea>
+            </div>
+
+
+
+            <h3>Schedule a meeting with a coordinator</h3>
+            <p>What days and at what times are you free to meet or voice chat with a coordinator?</p>
+            <div class="form-group">
+                <textarea class="form-control" id="customerScheduleDates"
+                    placeholder="Days:&#13;&#10;Hours when free:&#13;&#10;" rows="2"></textarea>
+            </div>
+            <p>Is there anything else you would like to add about your event that was not listed in the questionnaire?
+            </p>
+            <div class="form-group">
+                <textarea class="form-control" id="customerExtraConcerns" placeholder="Anything at all"
+                    rows="2"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="float: right;">Submit</button>
+        </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
