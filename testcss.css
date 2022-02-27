@@ -1,0 +1,59 @@
+body {
+    background: rgb(172, 172, 172)
+}
+
+#WeddingInfoForm{
+    background-color: #ffffff;
+    margin: 0px auto;
+    padding: 40px;
+    border-radius: 10px
+}
+
+p{
+    margin-top: 1em;
+}
+
+p.card-text {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    font-style: italic;
+    color: rgb(221, 194, 40);
+}
+
+h1 {
+    text-align: center
+}
+
+
+.tab {
+    display: none
+}
+
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5
+}
+
+.step.active {
+    opacity: 1
+}
+
+.step.finish {
+    background-color: #4CAF50
+}
+
+.all-steps {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
