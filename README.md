@@ -1,2 +1,3 @@
 # bryanP.github.io
-Just the stuff I am in charge of for my senior project
+Senior project form 
+and other assignments
